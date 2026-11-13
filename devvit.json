@@ -50,5 +50,13 @@
   },
   "dev": {
     "subreddit": "sub_sleuth_daily_dev"
+  },
+  "scheduler": {
+    "tasks": {
+      "daily-post": {
+        "cron": "30 0 * * *",
+        "endpoint": "/internal/scheduler/daily-post"
+      }
+    }
   }
 }
